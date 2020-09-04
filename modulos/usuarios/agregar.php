@@ -1,6 +1,10 @@
 <?php
 
+require '../../config/base.php';
+
+// Lógica de guardar un usuario
 $errores = '';
+$mensajes = '';
 
 // Comprobando que el formulario ha sido enviado con el método POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -62,37 +66,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             ':apellido' => $apellido,
             ':email' => $email,
         ));
+        $mensajes .= 'El usuario ha sido agregado con éxito<br>';
 
     }
 
     
 }
 
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-        <?php if (!empty($errores)): ?>
-            <p><?php echo $errores; ?></p>
-        <?php endif; ?>
-
-        <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre">
-
-        <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido">
-
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
-
-        <input type="submit" name="formulario1" value="Enviar">
-    </form>
-</body>
-</html>
+require_once $VIEWS_DIR . 'usuarios/agregar.view.php';
