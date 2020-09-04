@@ -1,14 +1,8 @@
 <?php
 
-class Padre
-{
-    public function say()
-    {
-        echo 'Hola<br>';
-    }
-}
+namespace ITCampeche;
 
-class Hijo
+class Padre
 {
     public function say()
     {

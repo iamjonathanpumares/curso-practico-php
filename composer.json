@@ -1,0 +1,18 @@
+{
+    "name": "jepumares/curso-practico-php",
+    "description": "Curso Práctico de PHP.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan Pumares",
+            "email": "jepc1491@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ITCampeche\\": "src/"
+        }
+    }
+}

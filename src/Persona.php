@@ -1,5 +1,7 @@
 <?php
 
+namespace ITCampeche;
+
 class Persona
 {
     // Constructor: Nos permite definir valores iniciales a nuestros objetos

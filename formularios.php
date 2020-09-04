@@ -6,9 +6,10 @@ $errores = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
     // Captura los datos del formulario
-    $nombre = trim($_POST['nombre']); // Es requerido
+    extract($_POST);
+    /*$nombre = trim($_POST['nombre']); // Es requerido
     $apellido = trim($_POST['apellido']); // Es requerido
-    $email = trim($_POST['email']); // Es requerido
+    $email = trim($_POST['email']); // Es requerido*/
 
     // Valido los campos del formulario
     if (empty($nombre))

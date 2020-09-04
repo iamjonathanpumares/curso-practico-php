@@ -2,11 +2,14 @@
 
 // require_once 'Persona.php';
 // require_once 'Persona.php';
-require_once 'Padre.php';
+/*require_once 'Padre.php';
 require_once 'Persona.php';
 require_once 'Unidad.php';
 require_once 'Soldado.php';
-require_once 'Arquero.php';
+require_once 'Arquero.php';*/
+require 'vendor/autoload.php';
+
+use ITCampeche\{Persona, Hijo, Soldado};
 
 /*
  *

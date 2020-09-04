@@ -1,5 +1,7 @@
 <?php
 
+namespace ITCampeche;
+
 abstract class Unidad
 {
     public $nombre;
